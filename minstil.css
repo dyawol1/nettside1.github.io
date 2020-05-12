@@ -1,0 +1,61 @@
+
+body {
+  background-color: #FF8A8A;
+}
+
+
+  
+/* Definerer main taggen. Det vil si hvordan gridsene skal oppføre seg på overordnet nivå*/
+main {
+	display: grid; /* Definerer at sidene skal vises med grids*/
+	/* grid-column-gap: 15px; mellomrom mellom gridsene horisontalt*/
+	grid-row-gap: 5px;  /* mellomrom mellom gridsene vertikaltt*/
+	text-align: center; /* all teks skal midtstilles som standard*/
+	grid-template-rows: 1fr 1fr 1fr 1fr; /* deler skjermen i 5 like store deler - vertikalt */
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* deler skjermen i 5 like store deler - horisontalt */
+}
+
+
+
+/* Definerer meny_venstre taggen/griden*/
+.meny_venstre{
+	grid-column: 1/2;
+	font-size: 14px;
+	text-align: left;
+	text-indent: 20px;
+	font-weight: bold;
+	color: White;
+	background-color: #5A5353;
+	grid-column-gap: 15px; /* mellomrom mellom gridsene horisontalt*/
+}
+
+ a{
+	 color:white;
+ }
+
+/* Definerer hovedvindu taggen/griden*/
+.hovedvindu{
+	grid-column: 2/6;
+	/*grid-row: auto;*/
+	
+	min-height: 500px;
+	padding: 15px;
+	margin-top: 15px;
+	margin-bottom: 7px;
+	margin-left: 15px;
+	color:White;
+	text-align: left;
+	background-image: url(Filer/Bie.png);
+	background-repeat:repeat;
+	
+	float: inline-start;
+	
+}
+
+h2 {
+  color: black;
+  
+ 
+}  
+
+
